@@ -1,4 +1,4 @@
-# booklet-style-PDF-reordering-python-script
+# pdf_bookbinder
 
 Two simple python scripts for reordering a PDF file in 
 * a foldable booklet, or
