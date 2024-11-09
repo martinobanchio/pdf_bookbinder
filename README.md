@@ -1,21 +1,29 @@
 # booklet-style-PDF-reordering-python-script
 
-a **very simple** python script for reordering a PDF file in a foldable booklet style. 
+Two simple python scripts for reordering a PDF file in 
+* a foldable booklet, or
+* a bound book, divided in signatures. 
 
 Two pdf pages per face, and you can fold the printed papers in the middle, and read it like a normal book. 
 
 ## requirement
 
 ```
-pip install PyPDF2
+pip install pypdf
 ```
 
 ## Usage
 
+For a single, foldable booklet, simply call
 ```
-python main.py input_file.pdf
+python booklet.py input_file.pdf
+```
+
+For the bound book, choose how many pages go in a signature (4, 8, 12, or 16) and call
+```
+python booklet.py input_file.pdf pages_in_signature
 ```
 
 ## note
 
-make sure you select printing on both side and see if the printed paper is what you want ;)
+Two-sided printing with flip-on-short-edge option yields the result. 
